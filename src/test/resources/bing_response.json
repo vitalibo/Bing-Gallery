@@ -1,0 +1,33 @@
+{
+  "images": [
+    {
+      "startdate": "20200926",
+      "fullstartdate": "202009260700",
+      "enddate": "20200927",
+      "url": "/th?id=OHR.WatkinsGlen_EN-US1837020817_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3072&h=1920&rs=1&c=4",
+      "urlbase": "/th?id=OHR.WatkinsGlen_EN-US1837020817",
+      "copyright": "Watkins Glen State Park\\'s Rainbow Falls in the Finger Lakes region of upstate New York (\\xc2\\xa9 Kenneth Keifer/Alamy)",
+      "copyrightlink": "/search?q=national+public+lands+day&form=hpcapt&filters=HpDate%3a%2220200926_0700%22",
+      "title": "Wandering Watkins Glen",
+      "caption": "Wandering Watkins Glen",
+      "copyrightonly": "\\xc2\\xa9 Kenneth Keifer/Alamy",
+      "desc": "When we talk about celebrating public lands, the images that pop into our heads are generally icons of the famous national parks out West. Old Faithful, El Capitan, the Arches. Our photo for National Public Lands Day highlights the relatively unsung beauty of the more than 10,000 state parks dotting the nation from coast to coast.",
+      "date": "Sep 26, 2020",
+      "bsTitle": "Wandering Watkins Glen",
+      "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20200926_WatkinsGlen%22&FORM=HPQUIZ",
+      "wp": true,
+      "hsh": "24a77de8b6123013cf66bb575fcc24ad",
+      "drk": 1,
+      "top": 1,
+      "bot": 1,
+      "hs": []
+    }
+  ],
+  "tooltips": {
+    "loading": "Loading...",
+    "previous": "Previous image",
+    "next": "Next image",
+    "walle": "This image is not available to download as wallpaper.",
+    "walls": "Download this image. Use of this image is restricted to wallpaper only."
+  }
+}
