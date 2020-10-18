@@ -2,6 +2,8 @@
 
 Command-line tool for change a desktop picture based on daily Bing images
 
+[![Build Status](https://travis-ci.org/vitalibo/bing-gallery.svg?branch=master)](https://travis-ci.org/vitalibo/bing-gallery)
+
 ### Usage
 
 ```text

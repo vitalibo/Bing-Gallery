@@ -1,0 +1,37 @@
+language: python
+
+env:
+  - PYTHON=python3
+
+jobs:
+  include:
+    - name: "Python 3.8.0 on Xenial Linux"
+      python: 3.8
+    - name: "Python 3.7.4 on macOS"
+      os: osx
+      osx_image: xcode11.2
+      language: shell
+    - name: "Python 3.8.0 on Windows"
+      os: windows
+      env:
+        - PATH=/c/Python38:/c/Python38/Scripts:$PATH
+        - PYTHON=python
+      language: shell
+      before_install:
+        - choco install $PYTHON --version 3.8.0
+        - $PYTHON -m pip install --upgrade pip wheel
+
+script:
+  - $PYTHON setup.py sdist bdist_wheel
+
+deploy:
+  provider: releases
+  file:
+    - dist/*.whl
+    - dist/*.tar.gz
+  file_glob: true
+  on:
+    tags: true
+  skip_cleanup: true
+  api_key:
+    secure: "JBWImZ2+015wrpQDhBfScTRdIkGkpfNxAXoJBd3fN5TUH3zUT9ySDylMMChS4LlaDC4tt6Z+hTq4zNFQ+U4rSBgkknI/epWFcNx0HUFoHfoFpRRu5HBfV4q9hXGnGEojr9/3UsypRto2yFyVuejlrCAbkjG+Grb/bDgkCm6DWsgp2FKlPb7ROYTOi2OuNsjYMsz8WEQ3jgKalAU3e5jNP/EnLmewLQvc1G8xx98NIYix6h3hyJBqcLmbVIky4M21YRMX11Qc4QNizkBy81ggqh2PeBbBhzNTvtEdIXWKBAo5+KS/xa09pavdMaUOBWou9XAY8KbvaBI1HmDDpI14pRXfePvwAcwNfn09rhuKIB11Sv1s7ovNF091uM1c+2ysivaB099J2jmrGB54X6ZaBmw6UCNjkGGt8ZfSjskvA6KPmjMPNNpj0J2zYb2mdNP5ALiIsjLnluEOcSkcGUDpAm5axorNCGlZfMLpKD9h919gYQSs0PSuzBvVR80MotLCESgnl4svYHnCVZTFrrtwmaxPamBLWr4iFEO7msI0P0i2B5Zjzyjr2d4vEbacSo+EVOIZP7iffIYNEYi/mnMp+SqQ82pmG2agCKWn7nKiukIXXTGo60k51srGGIphJFUAQD2r+j45EoWYAqsCqguhieuSTmJ8BXbql/PphucVnEE="
