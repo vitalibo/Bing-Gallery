@@ -1,4 +1,7 @@
 .idea/
 venv/
+*.egg-info/
+build/
+dist/
 .DS_Store
 *.iml
