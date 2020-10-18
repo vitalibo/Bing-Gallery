@@ -4,6 +4,15 @@ Command-line tool for change a desktop picture based on daily Bing images
 
 [![Build Status](https://travis-ci.org/vitalibo/bing-gallery.svg?branch=master)](https://travis-ci.org/vitalibo/bing-gallery)
 
+### Installing
+#### macOS
+
+For macOS family you can use [Homebrew](https://brew.sh) package for that.
+
+```bash
+brew install https://raw.githubusercontent.com/vitalibo/bing-gallery/master/integration/brew/bing-gallery.rb
+```
+
 ### Usage
 
 ```text
