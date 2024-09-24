@@ -7,7 +7,7 @@ class BingGallery < Formula
   sha256 "5d1088fa8825e87cb3f1c15637439c310ef073a5bf41e575956fda72e17ec58c"
   license "MIT License"
 
-  depends_on "python@3.9"
+  depends_on "python@3.12"
 
   def install
     virtualenv_install_with_resources
