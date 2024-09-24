@@ -10,7 +10,8 @@ Command-line tool for change a desktop picture based on daily [Bing](https://www
 For macOS family you can use [Homebrew](https://brew.sh) package for that.
 
 ```bash
-brew install https://raw.githubusercontent.com/vitalibo/bing-gallery/master/integration/brew/bing-gallery.rb
+wget https://raw.githubusercontent.com/vitalibo/bing-gallery/master/integration/brew/bing-gallery.rb
+brew install bing-gallery.rb
 ```
 
 ### Usage
